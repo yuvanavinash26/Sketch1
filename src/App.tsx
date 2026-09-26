@@ -4,9 +4,12 @@
  */
 
 import React, { useState } from 'react';
+import { BackgroundEffects } from './components/BackgroundEffects';
+import { CustomCursor } from './components/CustomCursor';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { TrustStrip } from './components/TrustStrip';
+import { VideoShowcase } from './components/VideoShowcase';
 import { CourseGrid } from './components/CourseGrid';
 import { HowItWorks } from './components/HowItWorks';
 import { Outcomes } from './components/Outcomes';
@@ -70,6 +73,12 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#F7F9FC] text-[#0B1E3D] selection:bg-[#FFB547]/30 selection:text-[#0B1E3D] relative flex flex-col font-sans">
+      {/* Interactive Cursor Glow & Magnetic Feedback */}
+      <CustomCursor />
+
+      {/* Dynamic Ambient Background Effects & Grid Matrix */}
+      <BackgroundEffects />
+
       {/* Sticky Top Navigation Bar */}
       <Navbar
         onStartLearning={handleStartLearning}
@@ -87,7 +96,10 @@ export default function App() {
         {/* 2. Trust Strip */}
         <TrustStrip />
 
-        {/* 3. Course Grid */}
+        {/* 3. Cursor-Responsive Video Showcase ("See what real skill building looks like") */}
+        <VideoShowcase />
+
+        {/* 4. Course Grid */}
         <CourseGrid
           onSelectCourse={handleSelectCourse}
           onEnrollCourse={handleEnrollCourse}

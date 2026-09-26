@@ -11,7 +11,7 @@ export const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 md:py-32 bg-white border-b border-[#E5EAF1] scroll-mt-20">
+    <section id="faq" className="py-24 md:py-32 bg-white/75 backdrop-blur-xs border-b border-[#E5EAF1] scroll-mt-20 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

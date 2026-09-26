@@ -20,14 +20,24 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onStartLearning }) => {
 
   return (
     <section className="relative py-28 md:py-36 bg-[#0B1E3D] text-white overflow-hidden">
+      {/* Precision Dot Grid on Dark Navy */}
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute inset-0 opacity-15 [background-image:radial-gradient(#FFB547_1.25px,transparent_1.25px)] [background-size:24px_24px] -z-0" 
+      />
+
       {/* Subtle radial ambient glows */}
       <div 
         aria-hidden="true" 
-        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-[#142B52] to-transparent blur-3xl opacity-60 -z-0" 
+        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-gradient-to-b from-[#142B52] to-transparent blur-3xl opacity-70 -z-0" 
       />
       <div 
         aria-hidden="true" 
-        className="pointer-events-none absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#FFB547]/10 blur-3xl -z-0" 
+        className="pointer-events-none absolute bottom-0 right-1/4 w-[450px] h-[450px] bg-[#FFB547]/15 blur-[100px] -z-0" 
+      />
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute top-1/3 left-10 w-[350px] h-[350px] bg-[#38BDF8]/10 blur-[100px] -z-0" 
       />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

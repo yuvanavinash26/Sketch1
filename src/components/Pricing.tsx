@@ -11,7 +11,12 @@ export const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
   const [isAnnual, setIsAnnual] = useState(true);
 
   return (
-    <section id="pricing" className="py-24 md:py-32 bg-[#F7F9FC] scroll-mt-20">
+    <section id="pricing" className="py-24 md:py-32 bg-[#F7F9FC]/80 backdrop-blur-2xs scroll-mt-20 relative overflow-hidden">
+      {/* Subtle ambient light centered on the recommended plan */}
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[600px] bg-[#FFB547]/8 rounded-full blur-[140px] -z-10" 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

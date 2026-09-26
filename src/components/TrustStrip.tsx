@@ -11,7 +11,7 @@ const LOGOS = [
 
 export const TrustStrip: React.FC = () => {
   return (
-    <section className="py-12 border-y border-[#E5EAF1] bg-white/70">
+    <section className="py-12 border-y border-[#E5EAF1] bg-white/50 backdrop-blur-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Learners preparing for careers across modern technology teams

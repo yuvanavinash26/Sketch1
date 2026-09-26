@@ -72,7 +72,12 @@ export const HowItWorks: React.FC = () => {
   const activeStep = STEPS[activeStepIndex];
 
   return (
-    <section id="how-it-works" className="py-24 md:py-32 bg-white border-y border-[#E5EAF1] scroll-mt-20">
+    <section id="how-it-works" className="py-24 md:py-32 bg-white/70 backdrop-blur-xs border-y border-[#E5EAF1] scroll-mt-20 relative overflow-hidden">
+      {/* Subtle section background radial glow */}
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute -bottom-24 right-1/4 w-96 h-96 bg-[#FFB547]/5 rounded-full blur-3xl -z-10" 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

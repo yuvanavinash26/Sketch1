@@ -125,12 +125,12 @@ export const Hero: React.FC<HeroProps> = ({ onStartLearning, onBrowseCourses }) 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2"
             >
               <button
                 type="button"
                 onClick={onStartLearning}
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 text-base font-semibold text-[#0B1E3D] bg-[#FFB547] hover:bg-[#ffa726] active:scale-[0.98] transition-all rounded-xl shadow-md hover:shadow-lg cursor-pointer group"
+                className="inline-flex items-center justify-center gap-3 px-7 py-3.5 text-base font-semibold text-[#0B1E3D] bg-[#FFB547] hover:bg-[#ffa726] active:scale-[0.98] transition-all rounded-xl shadow-md hover:shadow-lg cursor-pointer group"
               >
                 <span>Start Learning</span>
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -139,10 +139,30 @@ export const Hero: React.FC<HeroProps> = ({ onStartLearning, onBrowseCourses }) 
               <button
                 type="button"
                 onClick={onBrowseCourses}
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-semibold text-[#0B1E3D] bg-white hover:bg-slate-50 border border-[#E5EAF1] hover:border-slate-300 rounded-xl transition-all shadow-xs cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-[#0B1E3D] bg-white hover:bg-slate-50 border border-[#E5EAF1] hover:border-slate-300 rounded-xl transition-all shadow-xs cursor-pointer"
               >
                 <span>Browse Courses</span>
               </button>
+
+              <a
+                href="#studio"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.getElementById('studio');
+                  if (target) {
+                    const topOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - topOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                  }
+                }}
+                className="inline-flex items-center justify-center gap-2 px-4 py-3.5 text-xs sm:text-sm font-semibold text-slate-700 hover:text-[#0B1E3D] transition-colors group/reel cursor-pointer"
+              >
+                <div className="w-7 h-7 rounded-full bg-[#0B1E3D]/5 border border-[#0B1E3D]/10 flex items-center justify-center text-[#0B1E3D] group-hover/reel:bg-[#FFB547] transition-colors">
+                  <Play className="w-3.5 h-3.5 fill-current ml-0.5" />
+                </div>
+                <span>Watch Studio Reel (2m)</span>
+              </a>
             </motion.div>
 
             {/* Key Value Micro-Proof */}

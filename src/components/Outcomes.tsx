@@ -129,14 +129,24 @@ export const Outcomes: React.FC = () => {
   return (
     <section id="outcomes" className="py-24 md:py-32 bg-[#0B1E3D] text-white relative overflow-hidden scroll-mt-20">
       
+      {/* Precision Dot Grid on Dark Navy */}
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute inset-0 opacity-10 [background-image:radial-gradient(#FFB547_1.25px,transparent_1.25px)] [background-size:24px_24px] -z-0" 
+      />
+
       {/* Ambient background lighting */}
       <div 
         aria-hidden="true" 
-        className="pointer-events-none absolute -top-40 right-0 w-[600px] h-[600px] bg-[#142B52] blur-3xl opacity-50 -z-0" 
+        className="pointer-events-none absolute -top-40 right-0 w-[600px] h-[600px] bg-[#142B52] blur-3xl opacity-60 -z-0" 
       />
       <div 
         aria-hidden="true" 
-        className="pointer-events-none absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#FFB547]/5 blur-3xl -z-0" 
+        className="pointer-events-none absolute bottom-0 left-0 w-[550px] h-[550px] bg-[#FFB547]/10 blur-3xl -z-0" 
+      />
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#38BDF8]/5 blur-3xl -z-0" 
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

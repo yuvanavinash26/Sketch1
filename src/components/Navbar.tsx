@@ -24,6 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onStartLearning, onBrowseCourses
   }, []);
 
   const navLinks = [
+    { name: 'Studio', href: '#studio' },
     { name: 'Courses', href: '#courses' },
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'Outcomes', href: '#outcomes' },

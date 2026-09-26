@@ -71,6 +71,8 @@ export const CourseGrid: React.FC<CourseGridProps> = ({ onSelectCourse, onEnroll
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.3 }}
                 key={course.id}
+                data-cursor="card"
+                data-cursor-text="Inspect Track"
                 className="group relative flex flex-col bg-white rounded-2xl border border-[#E5EAF1] shadow-xs hover:shadow-xl hover:-translate-y-1.5 hover:border-slate-300 transition-all duration-300 overflow-hidden cursor-pointer"
                 onClick={() => onSelectCourse(course)}
               >
