@@ -1,0 +1,6 @@
+{
+  "name": "Skillnest — Career-First EdTech Platform",
+  "description": "Learn in-demand skills through structured programs, real projects, and expert mentorship. Build proof that moves your career forward.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
